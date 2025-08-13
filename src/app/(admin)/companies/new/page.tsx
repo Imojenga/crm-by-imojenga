@@ -3,7 +3,7 @@
 import React from 'react';
 import CompanyForm from '@/app/components/company-form';
 
-export interface PageProps {}
+export type PageProps = Record<string, never>;
 
 export default function Page({}: PageProps) {
   return (

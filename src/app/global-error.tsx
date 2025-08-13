@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export interface GlobalErrorProps {}
+export type GlobalErrorProps = Record<string, never>;
 
 export default function GlobalError({}: GlobalErrorProps) {
   return (

@@ -5,7 +5,7 @@ import { getCompanies, getCountries } from '@/lib/api';
 import DashboardCard from '@/app/components/dashboard-card';
 import getCountById from '@/lib/utils/getCountById';
 
-export interface PageProps {}
+export type PageProps = Record<string, never>;
 
 export default async function Page({}: PageProps) {
   const countries = await getCountries();

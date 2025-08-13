@@ -4,7 +4,7 @@ import { getCompanies } from '@/lib/api';
 import getQueryClient from '@/lib/utils/getQueryClient';
 import CompanyTable from '@/app/components/company-table';
 
-export interface PageProps {}
+export type PageProps = Record<string, never>;
 
 export default async function Page({}: PageProps) {
   const queryClient = getQueryClient();

@@ -4,7 +4,7 @@ import getCountById from '@/lib/utils/getCountById';
 import StatCard, { StatCardType } from '@/app/components/stat-card';
 import DashboardCard from '@/app/components/dashboard-card';
 
-export interface PageProps {}
+export type PageProps = Record<string, never>;
 
 export default async function Page({}: PageProps) {
   const categories = await getCategories();

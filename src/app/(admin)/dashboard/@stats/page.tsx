@@ -2,7 +2,7 @@ import React from 'react';
 import { getSummaryStats, SummaryStats } from '@/lib/api';
 import StatCard, { StatCardType } from '@/app/components/stat-card';
 
-export interface PageProps {}
+export type PageProps = Record<string, never>;
 
 const labelByStat: Record<keyof SummaryStats, string> = {
   promotions: 'Total promotions',

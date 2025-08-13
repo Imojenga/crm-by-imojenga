@@ -5,8 +5,9 @@ import { Field, FieldAttributes } from 'formik';
 
 export interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
-    Pick<FieldAttributes<string>, 'as'> {
+    Omit<FieldAttributes<string>, 'as'> {
   label?: string;
+  as?: string;
 }
 
 export default function InputField({ label, id, ...rest }: InputFieldProps) {

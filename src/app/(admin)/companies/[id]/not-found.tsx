@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export interface NotFoundProps {}
+export type NotFoundProps = Record<string, never>;
 
 export default function NotFound({}: NotFoundProps) {
   return (
